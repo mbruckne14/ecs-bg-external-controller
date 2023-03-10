@@ -120,7 +120,7 @@ Resources:
           ContainerPort: !ImportValue EcsBGSampleStack:AppListenPort
           TargetGroupArn: !ImportValue EcsBGSampleStack:BlueServiceTargetGroup
       NetworkConfiguration:
-        AwsvpcConfiguration:
+        AwsVpcConfiguration:
           SecurityGroups:
             - !ImportValue EcsBGSampleStack:ServiceSecurityGroupId
           Subnets: 
